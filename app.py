@@ -8,7 +8,7 @@ logging.basicConfig(level=logging.INFO)
 
 app = Flask(__name__)
 
-UPLOAD_DIRECTORY = "./data"
+UPLOAD_DIRECTORY = "/tmp"
 ALLOWED_EXTENSIONS = {'pdf'}
 
 
@@ -33,7 +33,7 @@ def remove_file(filepath):
 
 @app.route('/', methods=['GET'])
 def home():
-    return 'This is PDF extractor app'
+    return 'This is a PDF extractor app'
 
 
 @app.route('/extract_text', methods=['POST'])
