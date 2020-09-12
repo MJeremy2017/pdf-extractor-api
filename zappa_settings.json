@@ -1,0 +1,10 @@
+{
+    "dev": {
+        "app_function": "app.app",
+        "aws_region": "ap-southeast-1",
+        "profile_name": "zappa",
+        "project_name": "pdf-extractor-api",
+        "runtime": "python3.7",
+        "s3_bucket": "zappa-pdf-extractor-api"
+    }
+}
